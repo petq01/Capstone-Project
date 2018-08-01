@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Xkcd comics</string>
+    <string name="current_btn">Choose latest comix</string>
+    <string name="random_btn">Choose random comix</string>
+    <string name="fav_list">Show fav collection</string>
+    <string name="content_desc_xkcd">XkCD comic in picture</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/630097</string>
+    <string name="main_notification_channel_name">Main chanel</string>
+    <string name="subscribe_msg">Subscribe notifications for new comics</string>
+    <string name="like_some">Like some comics \n via heart button!</string>
+    <string name="next_page">Next</string>
+    <string name="previous_page">Previous</string>
+    <string name="comics_description">Comics description</string>
+    <string name="zoom_image_via_click">Zoom image via click</string>
+    <string name="favorite_current_comics">Favorite current comics</string>
+    <string name="unfavorite_current_comics">Unfavorite current comics</string>
+    <string name="add_transcript_to_widget_joke">Add transcript to widget joke</string>
+    <string name="logo_of_app">Logo of app</string>
+
+</resources>

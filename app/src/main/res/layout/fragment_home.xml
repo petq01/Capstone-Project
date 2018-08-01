@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical">
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+    <ImageView
+        android:layout_width="@dimen/match_300dp"
+        android:layout_height="@dimen/match_300dp"
+        android:contentDescription="@string/logo_of_app"
+        android:layout_gravity="center"
+        android:src="@drawable/logo" />
+
+    <Button
+        android:id="@+id/current_btn"
+        style="@style/buttons_home"
+        android:text="@string/current_btn" />
+
+    <Button
+        android:id="@+id/random_btn"
+        style="@style/buttons_home"
+        android:text="@string/random_btn" />
+
+    <Button
+        android:id="@+id/fav_list"
+        style="@style/buttons_home"
+        android:text="@string/fav_list" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginStart="10dp"
+            android:text="@string/subscribe_msg"/>
+        <Button
+            android:id="@+id/btn_schedule"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/schedule"
+            />
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/cancel"
+            />
+    </LinearLayout>
+
+</LinearLayout>

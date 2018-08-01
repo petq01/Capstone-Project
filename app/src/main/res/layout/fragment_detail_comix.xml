@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+     >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/prev_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|bottom"
+            android:background="@android:color/transparent"
+            android:drawableStart="@drawable/ic_back"
+            android:text="@string/previous_page" />
+
+        <Button
+            android:id="@+id/next_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:background="@android:color/transparent"
+            android:drawableEnd="@drawable/ic_next"
+            android:text="@string/next_page" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/title_comix"
+            android:layout_width="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="serif"
+            tools:text="Title #number" />
+        <TextView
+            android:id="@+id/tv_day"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="serif"
+            tools:text="22/12/2002" />
+        <ImageView
+            android:id="@+id/fav"
+            android:layout_width="@dimen/image_dimen"
+            android:layout_height="@dimen/image_dimen"
+            android:contentDescription="@string/favorite_current_comics"
+            android:src="@drawable/fav_yes" />
+
+        <ImageView
+            android:id="@+id/unfav"
+            android:layout_width="@dimen/image_dimen"
+            android:layout_height="@dimen/image_dimen"
+            android:contentDescription="@string/unfavorite_current_comics"
+            android:src="@drawable/fav_no"
+            android:visibility="gone" />
+        <ImageView
+            android:id="@+id/addWidget"
+            android:layout_width="@dimen/image_dimen"
+            android:layout_height="@dimen/image_dimen"
+            android:contentDescription="@string/add_transcript_to_widget_joke"
+            android:src="@drawable/ic_widget" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/iv_comix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/content_desc_xkcd"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_transcript" />
+    <TextView
+        android:id="@+id/tv_transcript"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="16sp"
+        android:fontFamily="serif"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_day"
+        tools:text="storyy \n\n\n ..." />
+
+</LinearLayout>
+</ScrollView>

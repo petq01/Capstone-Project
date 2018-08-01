@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/lightPrimaryColor" />
+
+    <TextView
+        android:id="@+id/title_comix_item"
+        android:layout_width="@dimen/match_300dp"
+        android:fontFamily="serif"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_margin="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        tools:text="Title #number" />
+
+
+    <TextView
+        android:id="@+id/tv_day_item"
+        android:layout_width="@dimen/match_300dp"
+        android:fontFamily="serif"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_comix_item"
+        tools:text="22/12/2002" />
+
+
+    <TextView
+        android:id="@+id/tv_transcript_item"
+        android:layout_width="@dimen/match_300dp"
+        android:fontFamily="serif"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_day_item"
+        tools:text="storyy \n\n\n ..." />
+
+
+    <ImageView
+        android:id="@+id/iv_comix_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/content_desc_xkcd"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_transcript_item" />
+
+</android.support.constraint.ConstraintLayout>
